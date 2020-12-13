@@ -1,0 +1,1100 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 600AF05B
+P 2050 1950
+F 0 "FB?" V 1776 1950 50  0000 C CNN
+F 1 "Ferrite_Bead" V 1867 1950 50  0000 C CNN
+F 2 "" V 1980 1950 50  0001 C CNN
+F 3 "~" H 2050 1950 50  0001 C CNN
+	1    2050 1950
+	0    1    1    0   
+$EndComp
+Text GLabel 1750 1950 0    39   Input ~ 0
+AVDD_IN
+$Comp
+L Device:C C?
+U 1 1 600B2664
+P 2450 2250
+F 0 "C?" H 2565 2296 50  0000 L CNN
+F 1 "10uF" H 2565 2205 50  0000 L CNN
+F 2 "" H 2488 2100 50  0001 C CNN
+F 3 "~" H 2450 2250 50  0001 C CNN
+	1    2450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 600B2D24
+P 3050 2400
+F 0 "TP?" H 3108 2518 50  0000 L CNN
+F 1 "TestPoint" H 3108 2427 50  0000 L CNN
+F 2 "" H 3250 2400 50  0001 C CNN
+F 3 "~" H 3250 2400 50  0001 C CNN
+	1    3050 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 600B30A3
+P 3700 2250
+F 0 "C?" H 3815 2296 50  0000 L CNN
+F 1 "0.1uF" H 3815 2205 50  0000 L CNN
+F 2 "" H 3738 2100 50  0001 C CNN
+F 3 "~" H 3700 2250 50  0001 C CNN
+	1    3700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 600B33F7
+P 3600 1900
+F 0 "TP?" H 3658 2018 50  0000 L CNN
+F 1 "TestPoint" H 3658 1927 50  0000 L CNN
+F 2 "" H 3800 1900 50  0001 C CNN
+F 3 "~" H 3800 1900 50  0001 C CNN
+	1    3600 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1950 2450 1950
+Wire Wire Line
+	2450 1950 2450 2100
+Wire Wire Line
+	2450 2400 2450 2450
+Wire Wire Line
+	2450 2450 3050 2450
+Wire Wire Line
+	3700 2450 3700 2400
+Wire Wire Line
+	3050 2400 3050 2450
+Connection ~ 3050 2450
+Wire Wire Line
+	3050 2450 3700 2450
+Wire Wire Line
+	2450 1950 3600 1950
+Wire Wire Line
+	3600 1950 3600 1900
+Connection ~ 2450 1950
+Wire Wire Line
+	3600 1950 3700 1950
+Wire Wire Line
+	3700 1950 3700 2100
+Connection ~ 3600 1950
+$Comp
+L power:GND #PWR?
+U 1 1 600B434D
+P 3700 2600
+F 0 "#PWR?" H 3700 2350 50  0001 C CNN
+F 1 "GND" H 3705 2427 50  0000 C CNN
+F 2 "" H 3700 2600 50  0001 C CNN
+F 3 "" H 3700 2600 50  0001 C CNN
+	1    3700 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2450 3700 2600
+Connection ~ 3700 2450
+Text GLabel 4100 1950 2    39   Input ~ 0
+AVDD
+Wire Wire Line
+	3700 1950 4100 1950
+Connection ~ 3700 1950
+Wire Wire Line
+	1750 1950 1900 1950
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 600B84B1
+P 2100 3350
+F 0 "FB?" V 1826 3350 50  0000 C CNN
+F 1 "Ferrite_Bead" V 1917 3350 50  0000 C CNN
+F 2 "" V 2030 3350 50  0001 C CNN
+F 3 "~" H 2100 3350 50  0001 C CNN
+	1    2100 3350
+	0    1    1    0   
+$EndComp
+Text GLabel 1800 3350 0    39   Input ~ 0
+DVDDX_IN
+$Comp
+L Device:C C?
+U 1 1 600B84B8
+P 2500 3650
+F 0 "C?" H 2615 3696 50  0000 L CNN
+F 1 "10uF" H 2615 3605 50  0000 L CNN
+F 2 "" H 2538 3500 50  0001 C CNN
+F 3 "~" H 2500 3650 50  0001 C CNN
+	1    2500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 600B84C4
+P 3750 3650
+F 0 "C?" H 3865 3696 50  0000 L CNN
+F 1 "0.1uF" H 3865 3605 50  0000 L CNN
+F 2 "" H 3788 3500 50  0001 C CNN
+F 3 "~" H 3750 3650 50  0001 C CNN
+	1    3750 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 600B84CA
+P 3650 3300
+F 0 "TP?" H 3708 3418 50  0000 L CNN
+F 1 "TestPoint" H 3708 3327 50  0000 L CNN
+F 2 "" H 3850 3300 50  0001 C CNN
+F 3 "~" H 3850 3300 50  0001 C CNN
+	1    3650 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3350 2500 3350
+Wire Wire Line
+	2500 3350 2500 3500
+Wire Wire Line
+	2500 3800 2500 3850
+Wire Wire Line
+	3750 3850 3750 3800
+Wire Wire Line
+	2500 3350 3650 3350
+Wire Wire Line
+	3650 3350 3650 3300
+Connection ~ 2500 3350
+Wire Wire Line
+	3650 3350 3750 3350
+Wire Wire Line
+	3750 3350 3750 3500
+Connection ~ 3650 3350
+$Comp
+L power:GND #PWR?
+U 1 1 600B84DE
+P 3750 4000
+F 0 "#PWR?" H 3750 3750 50  0001 C CNN
+F 1 "GND" H 3755 3827 50  0000 C CNN
+F 2 "" H 3750 4000 50  0001 C CNN
+F 3 "" H 3750 4000 50  0001 C CNN
+	1    3750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3850 3750 4000
+Connection ~ 3750 3850
+Text GLabel 4150 3350 2    39   Input ~ 0
+DVDDX
+Wire Wire Line
+	3750 3350 4150 3350
+Connection ~ 3750 3350
+Wire Wire Line
+	1800 3350 1950 3350
+Wire Wire Line
+	2500 3850 3750 3850
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 600BD3F3
+P 2100 5050
+F 0 "FB?" V 1826 5050 50  0000 C CNN
+F 1 "Ferrite_Bead" V 1917 5050 50  0000 C CNN
+F 2 "" V 2030 5050 50  0001 C CNN
+F 3 "~" H 2100 5050 50  0001 C CNN
+	1    2100 5050
+	0    1    1    0   
+$EndComp
+Text GLabel 1800 5050 0    39   Input ~ 0
+CLKLDO_IN
+$Comp
+L Device:C C?
+U 1 1 600BD3FA
+P 2500 5350
+F 0 "C?" H 2615 5396 50  0000 L CNN
+F 1 "10uF" H 2615 5305 50  0000 L CNN
+F 2 "" H 2538 5200 50  0001 C CNN
+F 3 "~" H 2500 5350 50  0001 C CNN
+	1    2500 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 600BD400
+P 3050 5350
+F 0 "C?" H 3165 5396 50  0000 L CNN
+F 1 "0.1uF" H 3165 5305 50  0000 L CNN
+F 2 "" H 3088 5200 50  0001 C CNN
+F 3 "~" H 3050 5350 50  0001 C CNN
+	1    3050 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 600BD406
+P 3650 5000
+F 0 "TP?" H 3708 5118 50  0000 L CNN
+F 1 "TestPoint" H 3708 5027 50  0000 L CNN
+F 2 "" H 3850 5000 50  0001 C CNN
+F 3 "~" H 3850 5000 50  0001 C CNN
+	1    3650 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5050 2500 5050
+Wire Wire Line
+	2500 5050 2500 5200
+Wire Wire Line
+	2500 5500 2500 5550
+Wire Wire Line
+	2500 5050 3050 5050
+Wire Wire Line
+	3650 5050 3650 5000
+Connection ~ 2500 5050
+Connection ~ 3650 5050
+$Comp
+L power:GND #PWR?
+U 1 1 600BD416
+P 3750 5700
+F 0 "#PWR?" H 3750 5450 50  0001 C CNN
+F 1 "GND" H 3755 5527 50  0000 C CNN
+F 2 "" H 3750 5700 50  0001 C CNN
+F 3 "" H 3750 5700 50  0001 C CNN
+	1    3750 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5550 3750 5700
+Text GLabel 4150 5050 2    39   Input ~ 0
+CLKLDO
+Wire Wire Line
+	1800 5050 1950 5050
+Wire Wire Line
+	2500 5550 3050 5550
+Wire Wire Line
+	3650 5050 4150 5050
+Wire Wire Line
+	3050 5500 3050 5550
+Connection ~ 3050 5550
+Wire Wire Line
+	3050 5550 3750 5550
+Wire Wire Line
+	3050 5200 3050 5050
+Connection ~ 3050 5050
+Wire Wire Line
+	3050 5050 3650 5050
+$Comp
+L Connector:TestPoint TP?
+U 1 1 600BF262
+P 3750 5450
+F 0 "TP?" H 3808 5568 50  0000 L CNN
+F 1 "TestPoint" H 3808 5477 50  0000 L CNN
+F 2 "" H 3950 5450 50  0001 C CNN
+F 3 "~" H 3950 5450 50  0001 C CNN
+	1    3750 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5450 3750 5550
+Connection ~ 3750 5550
+Text Label 1200 1250 0    197  ~ 0
+ANALOG_SUPPLY_SILTERS
+Text Label 6300 1250 0    197  ~ 0
+DIGITAL_SUPPLY_SILTERS
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 600D3CBF
+P 6300 1800
+F 0 "FB?" V 6026 1800 50  0000 C CNN
+F 1 "Ferrite_Bead" V 6117 1800 50  0000 C CNN
+F 2 "" V 6230 1800 50  0001 C CNN
+F 3 "~" H 6300 1800 50  0001 C CNN
+	1    6300 1800
+	0    1    1    0   
+$EndComp
+Text GLabel 6000 1800 0    39   Input ~ 0
+DVDD_IN
+$Comp
+L Device:C C?
+U 1 1 600D3CC6
+P 6700 2100
+F 0 "C?" H 6815 2146 50  0000 L CNN
+F 1 "10uF" H 6815 2055 50  0000 L CNN
+F 2 "" H 6738 1950 50  0001 C CNN
+F 3 "~" H 6700 2100 50  0001 C CNN
+	1    6700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 600D3CD2
+P 7950 2100
+F 0 "C?" H 8065 2146 50  0000 L CNN
+F 1 "0.1uF" H 8065 2055 50  0000 L CNN
+F 2 "" H 7988 1950 50  0001 C CNN
+F 3 "~" H 7950 2100 50  0001 C CNN
+	1    7950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 600D3CD8
+P 7850 1750
+F 0 "TP?" H 7908 1868 50  0000 L CNN
+F 1 "TestPoint" H 7908 1777 50  0000 L CNN
+F 2 "" H 8050 1750 50  0001 C CNN
+F 3 "~" H 8050 1750 50  0001 C CNN
+	1    7850 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1800 6700 1800
+Wire Wire Line
+	6700 1800 6700 1950
+Wire Wire Line
+	6700 2250 6700 2300
+Wire Wire Line
+	7950 2300 7950 2250
+Wire Wire Line
+	6700 1800 7100 1800
+Wire Wire Line
+	7850 1800 7850 1750
+Connection ~ 6700 1800
+Wire Wire Line
+	7850 1800 7950 1800
+Wire Wire Line
+	7950 1800 7950 1950
+Connection ~ 7850 1800
+Text GLabel 9100 1800 2    39   Input ~ 0
+DVDD
+Connection ~ 7950 1800
+Wire Wire Line
+	6000 1800 6150 1800
+$Comp
+L Device:C C?
+U 1 1 600D5A43
+P 7100 2100
+F 0 "C?" H 7215 2146 50  0000 L CNN
+F 1 "0.1uF" H 7215 2055 50  0000 L CNN
+F 2 "" H 7138 1950 50  0001 C CNN
+F 3 "~" H 7100 2100 50  0001 C CNN
+	1    7100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 600D5D09
+P 7500 2250
+F 0 "TP?" H 7558 2368 50  0000 L CNN
+F 1 "TestPoint" H 7558 2277 50  0000 L CNN
+F 2 "" H 7700 2250 50  0001 C CNN
+F 3 "~" H 7700 2250 50  0001 C CNN
+	1    7500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1950 7100 1800
+Wire Wire Line
+	6700 2300 7100 2300
+Connection ~ 7100 1800
+Wire Wire Line
+	7100 1800 7850 1800
+Wire Wire Line
+	7100 2250 7100 2300
+Connection ~ 7100 2300
+Wire Wire Line
+	7100 2300 7500 2300
+$Comp
+L Device:C C?
+U 1 1 600D7E63
+P 8400 2100
+F 0 "C?" H 8515 2146 50  0000 L CNN
+F 1 "0.1uF" H 8515 2055 50  0000 L CNN
+F 2 "" H 8438 1950 50  0001 C CNN
+F 3 "~" H 8400 2100 50  0001 C CNN
+	1    8400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 600D80BA
+P 8850 2100
+F 0 "C?" H 8965 2146 50  0000 L CNN
+F 1 "100PF" H 8965 2055 50  0000 L CNN
+F 2 "" H 8888 1950 50  0001 C CNN
+F 3 "~" H 8850 2100 50  0001 C CNN
+	1    8850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 600D8525
+P 8850 2450
+F 0 "#PWR?" H 8850 2200 50  0001 C CNN
+F 1 "GND" H 8855 2277 50  0000 C CNN
+F 2 "" H 8850 2450 50  0001 C CNN
+F 3 "" H 8850 2450 50  0001 C CNN
+	1    8850 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 1800 8400 1800
+Wire Wire Line
+	8850 1950 8850 1800
+Connection ~ 8850 1800
+Wire Wire Line
+	8850 1800 9100 1800
+Wire Wire Line
+	7500 2250 7500 2300
+Connection ~ 7500 2300
+Wire Wire Line
+	7500 2300 7950 2300
+Wire Wire Line
+	7950 2300 8400 2300
+Wire Wire Line
+	8850 2300 8850 2250
+Connection ~ 7950 2300
+Wire Wire Line
+	8400 2250 8400 2300
+Connection ~ 8400 2300
+Wire Wire Line
+	8400 2300 8850 2300
+Wire Wire Line
+	8850 2450 8850 2300
+Connection ~ 8850 2300
+Wire Wire Line
+	8400 1950 8400 1800
+Connection ~ 8400 1800
+Wire Wire Line
+	8400 1800 8850 1800
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 600E69EE
+P 6250 4400
+F 0 "FB?" V 5976 4400 50  0000 C CNN
+F 1 "Ferrite_Bead" V 6067 4400 50  0000 C CNN
+F 2 "" V 6180 4400 50  0001 C CNN
+F 3 "~" H 6250 4400 50  0001 C CNN
+	1    6250 4400
+	0    1    1    0   
+$EndComp
+Text GLabel 5950 4400 0    39   Input ~ 0
+CLKVDD_IN
+$Comp
+L Device:C C?
+U 1 1 600E69F5
+P 6650 4700
+F 0 "C?" H 6765 4746 50  0000 L CNN
+F 1 "10uF" H 6765 4655 50  0000 L CNN
+F 2 "" H 6688 4550 50  0001 C CNN
+F 3 "~" H 6650 4700 50  0001 C CNN
+	1    6650 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 600E6A01
+P 7100 4700
+F 0 "C?" H 7215 4746 50  0000 L CNN
+F 1 "0.1uF" H 7215 4655 50  0000 L CNN
+F 2 "" H 7138 4550 50  0001 C CNN
+F 3 "~" H 7100 4700 50  0001 C CNN
+	1    7100 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4400 6650 4400
+Wire Wire Line
+	6650 4400 6650 4550
+Wire Wire Line
+	6650 4850 6650 4900
+$Comp
+L power:GND #PWR?
+U 1 1 600E6A1B
+P 7550 5050
+F 0 "#PWR?" H 7550 4800 50  0001 C CNN
+F 1 "GND" H 7555 4877 50  0000 C CNN
+F 2 "" H 7550 5050 50  0001 C CNN
+F 3 "" H 7550 5050 50  0001 C CNN
+	1    7550 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 7850 4400 2    39   Input ~ 0
+CLKVDD
+Wire Wire Line
+	5950 4400 6100 4400
+Wire Wire Line
+	7550 4900 7550 5050
+Connection ~ 6650 4400
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 600F70D6
+P 6250 3100
+F 0 "FB?" V 5976 3100 50  0000 C CNN
+F 1 "Ferrite_Bead" V 6067 3100 50  0000 C CNN
+F 2 "" V 6180 3100 50  0001 C CNN
+F 3 "~" H 6250 3100 50  0001 C CNN
+	1    6250 3100
+	0    1    1    0   
+$EndComp
+Text GLabel 5950 3100 0    39   Input ~ 0
+DLDO2_IN
+$Comp
+L Device:C C?
+U 1 1 600F70DD
+P 6650 3400
+F 0 "C?" H 6765 3446 50  0000 L CNN
+F 1 "10uF" H 6765 3355 50  0000 L CNN
+F 2 "" H 6688 3250 50  0001 C CNN
+F 3 "~" H 6650 3400 50  0001 C CNN
+	1    6650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 600F70E3
+P 7050 3550
+F 0 "TP?" H 7108 3668 50  0000 L CNN
+F 1 "TestPoint" H 7108 3577 50  0000 L CNN
+F 2 "" H 7250 3550 50  0001 C CNN
+F 3 "~" H 7250 3550 50  0001 C CNN
+	1    7050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 600F70E9
+P 7550 3400
+F 0 "C?" H 7665 3446 50  0000 L CNN
+F 1 "0.1uF" H 7665 3355 50  0000 L CNN
+F 2 "" H 7588 3250 50  0001 C CNN
+F 3 "~" H 7550 3400 50  0001 C CNN
+	1    7550 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 600F70EF
+P 7050 3050
+F 0 "TP?" H 7108 3168 50  0000 L CNN
+F 1 "TestPoint" H 7108 3077 50  0000 L CNN
+F 2 "" H 7250 3050 50  0001 C CNN
+F 3 "~" H 7250 3050 50  0001 C CNN
+	1    7050 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3100 6650 3100
+Wire Wire Line
+	6650 3100 6650 3250
+Wire Wire Line
+	6650 3550 6650 3600
+$Comp
+L power:GND #PWR?
+U 1 1 600F70F8
+P 7550 3750
+F 0 "#PWR?" H 7550 3500 50  0001 C CNN
+F 1 "GND" H 7555 3577 50  0000 C CNN
+F 2 "" H 7550 3750 50  0001 C CNN
+F 3 "" H 7550 3750 50  0001 C CNN
+	1    7550 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 7850 3100 2    39   Input ~ 0
+DLDO2
+Wire Wire Line
+	5950 3100 6100 3100
+Wire Wire Line
+	7550 3550 7550 3600
+Wire Wire Line
+	6650 3600 7050 3600
+Connection ~ 7550 3600
+Wire Wire Line
+	7550 3600 7550 3750
+Wire Wire Line
+	7050 3550 7050 3600
+Connection ~ 7050 3600
+Wire Wire Line
+	7050 3600 7550 3600
+Wire Wire Line
+	7550 3250 7550 3100
+Wire Wire Line
+	7550 3100 7850 3100
+Wire Wire Line
+	7550 3100 7050 3100
+Connection ~ 7550 3100
+Connection ~ 6650 3100
+Wire Wire Line
+	7050 3050 7050 3100
+Connection ~ 7050 3100
+Wire Wire Line
+	7050 3100 6650 3100
+Wire Wire Line
+	6650 4900 7100 4900
+Wire Wire Line
+	6650 4400 7100 4400
+Wire Wire Line
+	7100 4550 7100 4400
+Connection ~ 7100 4400
+Wire Wire Line
+	7100 4400 7550 4400
+Wire Wire Line
+	7100 4850 7100 4900
+Connection ~ 7100 4900
+Wire Wire Line
+	7100 4900 7550 4900
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60104434
+P 7550 4350
+F 0 "TP?" H 7608 4468 50  0000 L CNN
+F 1 "TestPoint" H 7608 4377 50  0000 L CNN
+F 2 "" H 7750 4350 50  0001 C CNN
+F 3 "~" H 7750 4350 50  0001 C CNN
+	1    7550 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60104896
+P 7550 4800
+F 0 "TP?" H 7608 4918 50  0000 L CNN
+F 1 "TestPoint" H 7608 4827 50  0000 L CNN
+F 2 "" H 7750 4800 50  0001 C CNN
+F 3 "~" H 7750 4800 50  0001 C CNN
+	1    7550 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4400 7550 4350
+Connection ~ 7550 4400
+Wire Wire Line
+	7550 4400 7850 4400
+Wire Wire Line
+	7550 4900 7550 4800
+Connection ~ 7550 4900
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 60115BA5
+P 8950 3100
+F 0 "FB?" V 8676 3100 50  0000 C CNN
+F 1 "Ferrite_Bead" V 8767 3100 50  0000 C CNN
+F 2 "" V 8880 3100 50  0001 C CNN
+F 3 "~" H 8950 3100 50  0001 C CNN
+	1    8950 3100
+	0    1    1    0   
+$EndComp
+Text GLabel 8650 3100 0    39   Input ~ 0
+DLDO1_IN
+$Comp
+L Device:C C?
+U 1 1 60115BAC
+P 9350 3400
+F 0 "C?" H 9465 3446 50  0000 L CNN
+F 1 "10uF" H 9465 3355 50  0000 L CNN
+F 2 "" H 9388 3250 50  0001 C CNN
+F 3 "~" H 9350 3400 50  0001 C CNN
+	1    9350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60115BB2
+P 9800 3400
+F 0 "C?" H 9915 3446 50  0000 L CNN
+F 1 "0.1uF" H 9915 3355 50  0000 L CNN
+F 2 "" H 9838 3250 50  0001 C CNN
+F 3 "~" H 9800 3400 50  0001 C CNN
+	1    9800 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3100 9350 3100
+Wire Wire Line
+	9350 3100 9350 3250
+Wire Wire Line
+	9350 3550 9350 3600
+$Comp
+L power:GND #PWR?
+U 1 1 60115BBB
+P 10250 3750
+F 0 "#PWR?" H 10250 3500 50  0001 C CNN
+F 1 "GND" H 10255 3577 50  0000 C CNN
+F 2 "" H 10250 3750 50  0001 C CNN
+F 3 "" H 10250 3750 50  0001 C CNN
+	1    10250 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 10550 3100 2    39   Input ~ 0
+DLDO1
+Wire Wire Line
+	8650 3100 8800 3100
+Wire Wire Line
+	10250 3600 10250 3750
+Connection ~ 9350 3100
+Wire Wire Line
+	9350 3600 9800 3600
+Wire Wire Line
+	9350 3100 9800 3100
+Wire Wire Line
+	9800 3250 9800 3100
+Connection ~ 9800 3100
+Wire Wire Line
+	9800 3100 10250 3100
+Wire Wire Line
+	9800 3550 9800 3600
+Connection ~ 9800 3600
+Wire Wire Line
+	9800 3600 10250 3600
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60115BCD
+P 10250 3050
+F 0 "TP?" H 10308 3168 50  0000 L CNN
+F 1 "TestPoint" H 10308 3077 50  0000 L CNN
+F 2 "" H 10450 3050 50  0001 C CNN
+F 3 "~" H 10450 3050 50  0001 C CNN
+	1    10250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60115BD3
+P 10250 3500
+F 0 "TP?" H 10308 3618 50  0000 L CNN
+F 1 "TestPoint" H 10308 3527 50  0000 L CNN
+F 2 "" H 10450 3500 50  0001 C CNN
+F 3 "~" H 10450 3500 50  0001 C CNN
+	1    10250 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 3100 10250 3050
+Connection ~ 10250 3100
+Wire Wire Line
+	10250 3100 10550 3100
+Wire Wire Line
+	10250 3600 10250 3500
+Connection ~ 10250 3600
+$Comp
+L Device:C C?
+U 1 1 601397A5
+P 8900 4750
+F 0 "C?" H 9015 4796 50  0000 L CNN
+F 1 "10uF" H 9015 4705 50  0000 L CNN
+F 2 "" H 8938 4600 50  0001 C CNN
+F 3 "~" H 8900 4750 50  0001 C CNN
+	1    8900 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6013B31B
+P 9350 4750
+F 0 "C?" H 9465 4796 50  0000 L CNN
+F 1 "100PF" H 9465 4705 50  0000 L CNN
+F 2 "" H 9388 4600 50  0001 C CNN
+F 3 "~" H 9350 4750 50  0001 C CNN
+	1    9350 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6013B66A
+P 9800 4750
+F 0 "C?" H 9915 4796 50  0000 L CNN
+F 1 "100PF" H 9915 4705 50  0000 L CNN
+F 2 "" H 9838 4600 50  0001 C CNN
+F 3 "~" H 9800 4750 50  0001 C CNN
+	1    9800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6013C543
+P 10250 4750
+F 0 "C?" H 10365 4796 50  0000 L CNN
+F 1 "100PF" H 10365 4705 50  0000 L CNN
+F 2 "" H 10288 4600 50  0001 C CNN
+F 3 "~" H 10250 4750 50  0001 C CNN
+	1    10250 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6013C76B
+P 10700 4750
+F 0 "C?" H 10815 4796 50  0000 L CNN
+F 1 "100PF" H 10815 4705 50  0000 L CNN
+F 2 "" H 10738 4600 50  0001 C CNN
+F 3 "~" H 10700 4750 50  0001 C CNN
+	1    10700 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 8650 4400 0    39   Input ~ 0
+5V_SUPP
+$Comp
+L power:GND #PWR?
+U 1 1 60144327
+P 10700 5050
+F 0 "#PWR?" H 10700 4800 50  0001 C CNN
+F 1 "GND" H 10705 4877 50  0000 C CNN
+F 2 "" H 10700 5050 50  0001 C CNN
+F 3 "" H 10700 5050 50  0001 C CNN
+	1    10700 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601445CC
+P 10250 5050
+F 0 "#PWR?" H 10250 4800 50  0001 C CNN
+F 1 "GND" H 10255 4877 50  0000 C CNN
+F 2 "" H 10250 5050 50  0001 C CNN
+F 3 "" H 10250 5050 50  0001 C CNN
+	1    10250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6014486B
+P 9800 5050
+F 0 "#PWR?" H 9800 4800 50  0001 C CNN
+F 1 "GND" H 9805 4877 50  0000 C CNN
+F 2 "" H 9800 5050 50  0001 C CNN
+F 3 "" H 9800 5050 50  0001 C CNN
+	1    9800 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60144A3B
+P 9350 5050
+F 0 "#PWR?" H 9350 4800 50  0001 C CNN
+F 1 "GND" H 9355 4877 50  0000 C CNN
+F 2 "" H 9350 5050 50  0001 C CNN
+F 3 "" H 9350 5050 50  0001 C CNN
+	1    9350 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60144C21
+P 8900 5050
+F 0 "#PWR?" H 8900 4800 50  0001 C CNN
+F 1 "GND" H 8905 4877 50  0000 C CNN
+F 2 "" H 8900 5050 50  0001 C CNN
+F 3 "" H 8900 5050 50  0001 C CNN
+	1    8900 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4400 8900 4400
+Wire Wire Line
+	10700 4400 10700 4600
+Wire Wire Line
+	10700 4900 10700 5050
+Wire Wire Line
+	10250 5050 10250 4900
+Wire Wire Line
+	10250 4600 10250 4400
+Connection ~ 10250 4400
+Wire Wire Line
+	10250 4400 10700 4400
+Wire Wire Line
+	9800 4600 9800 4400
+Connection ~ 9800 4400
+Wire Wire Line
+	9800 4400 10250 4400
+Wire Wire Line
+	9800 4900 9800 5050
+Wire Wire Line
+	9350 5050 9350 4900
+Wire Wire Line
+	9350 4600 9350 4400
+Connection ~ 9350 4400
+Wire Wire Line
+	9350 4400 9800 4400
+Wire Wire Line
+	8900 4600 8900 4400
+Connection ~ 8900 4400
+Wire Wire Line
+	8900 4400 9350 4400
+Wire Wire Line
+	8900 4900 8900 5050
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 60175E55
+P 6300 5600
+F 0 "FB?" V 6026 5600 50  0000 C CNN
+F 1 "Ferrite_Bead" V 6117 5600 50  0000 C CNN
+F 2 "" V 6230 5600 50  0001 C CNN
+F 3 "~" H 6300 5600 50  0001 C CNN
+	1    6300 5600
+	0    1    1    0   
+$EndComp
+Text GLabel 6000 5600 0    39   Input ~ 0
+CVDDX_IN
+$Comp
+L Device:C C?
+U 1 1 60175E5C
+P 6700 5900
+F 0 "C?" H 6815 5946 50  0000 L CNN
+F 1 "10uF" H 6815 5855 50  0000 L CNN
+F 2 "" H 6738 5750 50  0001 C CNN
+F 3 "~" H 6700 5900 50  0001 C CNN
+	1    6700 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60175E62
+P 7950 5900
+F 0 "C?" H 8065 5946 50  0000 L CNN
+F 1 "0.1uF" H 8065 5855 50  0000 L CNN
+F 2 "" H 7988 5750 50  0001 C CNN
+F 3 "~" H 7950 5900 50  0001 C CNN
+	1    7950 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60175E68
+P 7850 5450
+F 0 "TP?" H 7908 5568 50  0000 L CNN
+F 1 "TestPoint" H 7908 5477 50  0000 L CNN
+F 2 "" H 8050 5450 50  0001 C CNN
+F 3 "~" H 8050 5450 50  0001 C CNN
+	1    7850 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5600 6700 5600
+Wire Wire Line
+	6700 5600 6700 5750
+Wire Wire Line
+	6700 6050 6700 6100
+Wire Wire Line
+	7950 6100 7950 6050
+Wire Wire Line
+	6700 5600 7100 5600
+Wire Wire Line
+	7850 5600 7850 5550
+Connection ~ 6700 5600
+Wire Wire Line
+	7850 5600 7950 5600
+Wire Wire Line
+	7950 5600 7950 5750
+Connection ~ 7850 5600
+Text GLabel 9100 5600 2    39   Input ~ 0
+CVDDX
+Connection ~ 7950 5600
+Wire Wire Line
+	6000 5600 6150 5600
+$Comp
+L Device:C C?
+U 1 1 60175E7B
+P 7100 5900
+F 0 "C?" H 7215 5946 50  0000 L CNN
+F 1 "0.1uF" H 7215 5855 50  0000 L CNN
+F 2 "" H 7138 5750 50  0001 C CNN
+F 3 "~" H 7100 5900 50  0001 C CNN
+	1    7100 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60175E81
+P 7500 6050
+F 0 "TP?" H 7558 6168 50  0000 L CNN
+F 1 "TestPoint" H 7558 6077 50  0000 L CNN
+F 2 "" H 7700 6050 50  0001 C CNN
+F 3 "~" H 7700 6050 50  0001 C CNN
+	1    7500 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5750 7100 5600
+Wire Wire Line
+	6700 6100 7100 6100
+Connection ~ 7100 5600
+Wire Wire Line
+	7100 5600 7850 5600
+Wire Wire Line
+	7100 6050 7100 6100
+Connection ~ 7100 6100
+Wire Wire Line
+	7100 6100 7500 6100
+$Comp
+L Device:C C?
+U 1 1 60175E8E
+P 8400 5900
+F 0 "C?" H 8515 5946 50  0000 L CNN
+F 1 "0.1uF" H 8515 5855 50  0000 L CNN
+F 2 "" H 8438 5750 50  0001 C CNN
+F 3 "~" H 8400 5900 50  0001 C CNN
+	1    8400 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60175E94
+P 8850 5900
+F 0 "C?" H 8965 5946 50  0000 L CNN
+F 1 "100PF" H 8965 5855 50  0000 L CNN
+F 2 "" H 8888 5750 50  0001 C CNN
+F 3 "~" H 8850 5900 50  0001 C CNN
+	1    8850 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60175E9A
+P 8850 6250
+F 0 "#PWR?" H 8850 6000 50  0001 C CNN
+F 1 "GND" H 8855 6077 50  0000 C CNN
+F 2 "" H 8850 6250 50  0001 C CNN
+F 3 "" H 8850 6250 50  0001 C CNN
+	1    8850 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5600 8400 5600
+Wire Wire Line
+	8850 5750 8850 5600
+Connection ~ 8850 5600
+Wire Wire Line
+	8850 5600 9100 5600
+Wire Wire Line
+	7500 6050 7500 6100
+Connection ~ 7500 6100
+Wire Wire Line
+	7500 6100 7950 6100
+Wire Wire Line
+	7950 6100 8400 6100
+Wire Wire Line
+	8850 6100 8850 6050
+Connection ~ 7950 6100
+Wire Wire Line
+	8400 6050 8400 6100
+Connection ~ 8400 6100
+Wire Wire Line
+	8400 6100 8850 6100
+Wire Wire Line
+	8850 6250 8850 6100
+Connection ~ 8850 6100
+Wire Wire Line
+	8400 5750 8400 5600
+Connection ~ 8400 5600
+Wire Wire Line
+	8400 5600 8850 5600
+$EndSCHEMATC
